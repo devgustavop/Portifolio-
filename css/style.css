@@ -73,7 +73,7 @@ html::-webkit-scrollbar-thumb{
     color: var(--main-color);
     border-bottom:3px solid var(--main-color) ;
 }
-#Menu-icon {
+#menu-icon {
     font-size: 3.6rem;
     color: var(--main-color);
     display: none;
@@ -231,22 +231,18 @@ span {
 }
 
 @keyframes words {
-    0%, 20% {
-        content: 'Web Developer';
+    0%, 33.33% {
+        content: 'Desenvolvedor Web';
     }
-    21%, 40% {
-        content: 'Software Developer';
+    33.34%, 66.66% {
+        content: 'Desenvolvedor de software';
     }
-    41%, 60% {
+    66.67%, 100% {
         content: 'Web Designer';
     }
-    61%, 80% {
-        content: 'Photographer';
-    }
-    81%, 100% {
-        content: 'Youtuber';
-    }
 }
+
+
 
 @keyframes typing {
     10%, 15%,
@@ -286,9 +282,8 @@ span {
     background: var(--second-bg-color);
     padding:1rem;
 }
-.headin{
 
-}
+
 
 .services-container{
     display: grid;
@@ -333,6 +328,15 @@ span {
     max-height: 100px;
     margin: auto;
 }
+.heading {
+    font-size: 2.5em; /* Tamanho da fonte */
+    color: var(--main-color); /* Cor do texto */
+    text-align: center; /* Alinhamento do texto */
+    margin: 30px 0; /* Margem superior e inferior */
+    font-weight: bold; /* Negrito */
+    text-transform: uppercase; /* Transformação de texto para maiúsculas */
+    letter-spacing: 2px; /* Espaçamento entre letras */
+}
 @media (max-width:991px){
     section{
         padding: 10rem 3% 2rem;
@@ -350,6 +354,10 @@ span {
     }
 }   
 /* Skills Section */
+.skills{
+    background-color: var(--bg-color);
+}
+
 .skills .container {
     background: var(--main-color);
     color: var(--main-color);
@@ -362,7 +370,7 @@ span {
 
 .skills .container .row {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     flex-wrap: wrap;
     gap: 1.8rem;
 }
@@ -394,7 +402,7 @@ span {
     font-weight: 500;
     margin-left: 1.5rem;
 }
-@media screen and (max-width:600px){
+/* @media screen and (max-width:600px){
 
 .skills.container {
 
@@ -422,5 +430,52 @@ margin-top: 5px;
 
 width: 100%;
 
+}
+} */
+/* Seu CSS existente */
+
+@media (max-width: 995px) {
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid var(--main-color);
+        border-bottom: 3px solid var(--main-color);
+        border-bottom-left-radius: 2rem;
+        padding: 1rem 3%;
+        background-color: var(--second-bg-color);
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    .navbar a:hover,
+    .navbar a.active {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid var(--main-color);
+    }
+
+    /* Ajuste no seletor do ícone de menu responsivo */
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--main-color);
+    display: block;
+    cursor: pointer;
+}
+/* Correção da classe 'headin' para 'heading' */
+.heading {
+    /* estilos aqui */
+    
 }
 }
