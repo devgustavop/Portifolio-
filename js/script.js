@@ -2,11 +2,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Selecionando elementos do DOM para o menu
     var menuIcon = document.getElementById('menu-icon');
     var navbar = document.querySelector('.navbar'); // Alterado para querySelector para selecionar pela classe
-
+    
     // Adicionando evento de clique ao ícone do menu
     menuIcon.addEventListener('click', function() {
         navbar.classList.toggle('active');
     });
+    
 
 
 
@@ -30,4 +31,5 @@ document.addEventListener('DOMContentLoaded', function() {
             icon.style.cursor = 'pointer';
         }
     });
+    
 });
