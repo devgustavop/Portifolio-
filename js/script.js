@@ -33,3 +33,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
 });
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("linkedin-link").href = "https://www.linkedin.com/in/gustavo-concei%C3%A7%C3%A3o-31747a308/";
+    document.getElementById("github-link").href = "https://github.com/yourprofile";
+    document.getElementById("twitter-link").href = "https://twitter.com/yourprofile";
+    document.getElementById("instagram-link").href = "https://www.instagram.com/yourprofile";
+    document.getElementById("whatsapp-link").href = "https://wa.me/yourphonenumber";
+});
